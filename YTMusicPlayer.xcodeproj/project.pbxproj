@@ -1,0 +1,719 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		021602B028DA064D00A8FFC4 /* Main (macOS).storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 021602AE28DA064D00A8FFC4 /* Main (macOS).storyboard */; };
+		021602B328DA065900A8FFC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 021602B228DA065900A8FFC4 /* Assets.xcassets */; };
+		021602B428DA065B00A8FFC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 021602B228DA065900A8FFC4 /* Assets.xcassets */; };
+		021602B528DA066400A8FFC4 /* Main (iOS).storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 021602AF28DA064D00A8FFC4 /* Main (iOS).storyboard */; };
+		021602BA28DA06DE00A8FFC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021602B928DA06DE00A8FFC4 /* AppDelegate.swift */; };
+		021602BB28DA06E000A8FFC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021602B928DA06DE00A8FFC4 /* AppDelegate.swift */; };
+		021602BD28DA06FE00A8FFC4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021602BC28DA06FE00A8FFC4 /* LoginViewController.swift */; };
+		021602BE28DA06FF00A8FFC4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021602BC28DA06FE00A8FFC4 /* LoginViewController.swift */; };
+		021602C328DA0CF700A8FFC4 /* CommonUiDefines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021602C228DA0CF700A8FFC4 /* CommonUiDefines.swift */; };
+		021602C428DA0CF700A8FFC4 /* CommonUiDefines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021602C228DA0CF700A8FFC4 /* CommonUiDefines.swift */; };
+		0227613F28E3207C002E9581 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0227613E28E3207C002E9581 /* NetworkManager.m */; };
+		0227614028E3207C002E9581 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0227613E28E3207C002E9581 /* NetworkManager.m */; };
+		02A53E0428E33B4400FB16B9 /* Pods_YTMusicPlayer__macOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70711F291D688870702EDDE2 /* Pods_YTMusicPlayer__macOS_.framework */; };
+		02A53E0528E33B4400FB16B9 /* Pods_YTMusicPlayer__macOS_.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 70711F291D688870702EDDE2 /* Pods_YTMusicPlayer__macOS_.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6D4CC56770ED298C8EB223BA /* Pods_YTMusicPlayer__iOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18319CAAB0F9FC3842C4D04E /* Pods_YTMusicPlayer__iOS_.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		02A53E0628E33B4400FB16B9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				02A53E0528E33B4400FB16B9 /* Pods_YTMusicPlayer__macOS_.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		021602AE28DA064D00A8FFC4 /* Main (macOS).storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Main (macOS).storyboard"; path = "Resources/Main (macOS).storyboard"; sourceTree = "<group>"; };
+		021602AF28DA064D00A8FFC4 /* Main (iOS).storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Main (iOS).storyboard"; path = "Resources/Main (iOS).storyboard"; sourceTree = "<group>"; };
+		021602B228DA065900A8FFC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Resources/Assets.xcassets; sourceTree = "<group>"; };
+		021602B628DA068C00A8FFC4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = SupportFiles/Info.plist; sourceTree = "<group>"; };
+		021602B828DA06BA00A8FFC4 /* YTMusicPlayer.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; name = YTMusicPlayer.entitlements; path = SupportFiles/YTMusicPlayer.entitlements; sourceTree = "<group>"; };
+		021602B928DA06DE00A8FFC4 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = SupportFiles/AppDelegate.swift; sourceTree = "<group>"; };
+		021602BC28DA06FE00A8FFC4 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ViewControllers/LoginViewController.swift; sourceTree = "<group>"; };
+		021602C228DA0CF700A8FFC4 /* CommonUiDefines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CommonUiDefines.swift; path = Categories/CommonUiDefines.swift; sourceTree = "<group>"; };
+		0227613D28E3207C002E9581 /* NetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NetworkManager.h; path = Managers/NetworkManager.h; sourceTree = "<group>"; };
+		0227613E28E3207C002E9581 /* NetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = NetworkManager.m; path = Managers/NetworkManager.m; sourceTree = "<group>"; };
+		02DBBB3428D9FF1D00247B8A /* YTMusicPlayer (macOS).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YTMusicPlayer (macOS).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		02DBBB4A28D9FF4C00247B8A /* YTMusicPlayer (iOS).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YTMusicPlayer (iOS).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18319CAAB0F9FC3842C4D04E /* Pods_YTMusicPlayer__iOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YTMusicPlayer__iOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BDAB28F01488552A01877CE /* Pods-YTMusicPlayer (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YTMusicPlayer (iOS).release.xcconfig"; path = "Target Support Files/Pods-YTMusicPlayer (iOS)/Pods-YTMusicPlayer (iOS).release.xcconfig"; sourceTree = "<group>"; };
+		58CD0897A1B7A9046AF07B7B /* Pods-YTMusicPlayer (macOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YTMusicPlayer (macOS).release.xcconfig"; path = "Target Support Files/Pods-YTMusicPlayer (macOS)/Pods-YTMusicPlayer (macOS).release.xcconfig"; sourceTree = "<group>"; };
+		70711F291D688870702EDDE2 /* Pods_YTMusicPlayer__macOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YTMusicPlayer__macOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		71B87C0611B1AF13F7140FCD /* Pods-YTMusicPlayer-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YTMusicPlayer-macOS.release.xcconfig"; path = "Target Support Files/Pods-YTMusicPlayer-macOS/Pods-YTMusicPlayer-macOS.release.xcconfig"; sourceTree = "<group>"; };
+		A0696396A6411A5163BA09D0 /* Pods_YTMusicPlayer_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YTMusicPlayer_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0C48BE2DF7FEC55A4E4DE20 /* Pods-YTMusicPlayer (macOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YTMusicPlayer (macOS).debug.xcconfig"; path = "Target Support Files/Pods-YTMusicPlayer (macOS)/Pods-YTMusicPlayer (macOS).debug.xcconfig"; sourceTree = "<group>"; };
+		BC8FB7CAA0457FE720629539 /* Pods-YTMusicPlayer-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YTMusicPlayer-macOS.debug.xcconfig"; path = "Target Support Files/Pods-YTMusicPlayer-macOS/Pods-YTMusicPlayer-macOS.debug.xcconfig"; sourceTree = "<group>"; };
+		D293E8686FA0EC48F79FD23C /* Pods-YTMusicPlayer (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YTMusicPlayer (iOS).debug.xcconfig"; path = "Target Support Files/Pods-YTMusicPlayer (iOS)/Pods-YTMusicPlayer (iOS).debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		02DBBB3128D9FF1D00247B8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02A53E0428E33B4400FB16B9 /* Pods_YTMusicPlayer__macOS_.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02DBBB4728D9FF4C00247B8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D4CC56770ED298C8EB223BA /* Pods_YTMusicPlayer__iOS_.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		021602A528DA05CA00A8FFC4 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				021602B928DA06DE00A8FFC4 /* AppDelegate.swift */,
+				021602B828DA06BA00A8FFC4 /* YTMusicPlayer.entitlements */,
+				021602B628DA068C00A8FFC4 /* Info.plist */,
+			);
+			name = SupportFiles;
+			sourceTree = "<group>";
+		};
+		021602A628DA05F100A8FFC4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		021602A728DA060F00A8FFC4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				021602BC28DA06FE00A8FFC4 /* LoginViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		021602AD28DA064700A8FFC4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				021602B228DA065900A8FFC4 /* Assets.xcassets */,
+				021602AF28DA064D00A8FFC4 /* Main (iOS).storyboard */,
+				021602AE28DA064D00A8FFC4 /* Main (macOS).storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		021602BF28DA0CCE00A8FFC4 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				021602C228DA0CF700A8FFC4 /* CommonUiDefines.swift */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		021602C028DA0CD200A8FFC4 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				0227613D28E3207C002E9581 /* NetworkManager.h */,
+				0227613E28E3207C002E9581 /* NetworkManager.m */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		021602C128DA0CD600A8FFC4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		0227611F28E31FEF002E9581 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		02DBBB2B28D9FF1D00247B8A = {
+			isa = PBXGroup;
+			children = (
+				02DBBB3628D9FF1D00247B8A /* YTMusicPlayer */,
+				02DBBB3528D9FF1D00247B8A /* Products */,
+				C9A4F09CFB1C4D2A7F6C57E8 /* Frameworks */,
+				2EE7203B82A04CDE7CFB9DB9 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		02DBBB3528D9FF1D00247B8A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				02DBBB3428D9FF1D00247B8A /* YTMusicPlayer (macOS).app */,
+				02DBBB4A28D9FF4C00247B8A /* YTMusicPlayer (iOS).app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		02DBBB3628D9FF1D00247B8A /* YTMusicPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				0227611F28E31FEF002E9581 /* Libraries */,
+				021602BF28DA0CCE00A8FFC4 /* Categories */,
+				021602C028DA0CD200A8FFC4 /* Managers */,
+				021602C128DA0CD600A8FFC4 /* Models */,
+				021602AD28DA064700A8FFC4 /* Resources */,
+				021602A528DA05CA00A8FFC4 /* SupportFiles */,
+				021602A728DA060F00A8FFC4 /* ViewControllers */,
+				021602A628DA05F100A8FFC4 /* Views */,
+			);
+			path = YTMusicPlayer;
+			sourceTree = "<group>";
+		};
+		2EE7203B82A04CDE7CFB9DB9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D293E8686FA0EC48F79FD23C /* Pods-YTMusicPlayer (iOS).debug.xcconfig */,
+				1BDAB28F01488552A01877CE /* Pods-YTMusicPlayer (iOS).release.xcconfig */,
+				A0C48BE2DF7FEC55A4E4DE20 /* Pods-YTMusicPlayer (macOS).debug.xcconfig */,
+				58CD0897A1B7A9046AF07B7B /* Pods-YTMusicPlayer (macOS).release.xcconfig */,
+				BC8FB7CAA0457FE720629539 /* Pods-YTMusicPlayer-macOS.debug.xcconfig */,
+				71B87C0611B1AF13F7140FCD /* Pods-YTMusicPlayer-macOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C9A4F09CFB1C4D2A7F6C57E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18319CAAB0F9FC3842C4D04E /* Pods_YTMusicPlayer__iOS_.framework */,
+				70711F291D688870702EDDE2 /* Pods_YTMusicPlayer__macOS_.framework */,
+				A0696396A6411A5163BA09D0 /* Pods_YTMusicPlayer_macOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		02DBBB3328D9FF1D00247B8A /* YTMusicPlayer (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02DBBB4328D9FF1D00247B8A /* Build configuration list for PBXNativeTarget "YTMusicPlayer (macOS)" */;
+			buildPhases = (
+				54D811B7FCA50E41FAF0F6E2 /* [CP] Check Pods Manifest.lock */,
+				02DBBB3028D9FF1D00247B8A /* Sources */,
+				02DBBB3128D9FF1D00247B8A /* Frameworks */,
+				02DBBB3228D9FF1D00247B8A /* Resources */,
+				780211FE88620A68CD089C60 /* [CP] Embed Pods Frameworks */,
+				02A53E0628E33B4400FB16B9 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "YTMusicPlayer (macOS)";
+			productName = YTMusicPlayer;
+			productReference = 02DBBB3428D9FF1D00247B8A /* YTMusicPlayer (macOS).app */;
+			productType = "com.apple.product-type.application";
+		};
+		02DBBB4928D9FF4C00247B8A /* YTMusicPlayer (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02DBBB5B28D9FF4D00247B8A /* Build configuration list for PBXNativeTarget "YTMusicPlayer (iOS)" */;
+			buildPhases = (
+				499FF08F4DA3BAB24C5C23FE /* [CP] Check Pods Manifest.lock */,
+				02DBBB4628D9FF4C00247B8A /* Sources */,
+				02DBBB4728D9FF4C00247B8A /* Frameworks */,
+				02DBBB4828D9FF4C00247B8A /* Resources */,
+				F74AC791FE01A2B56989B8AA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "YTMusicPlayer (iOS)";
+			productName = "YTMusicPlayer (iOS)";
+			productReference = 02DBBB4A28D9FF4C00247B8A /* YTMusicPlayer (iOS).app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		02DBBB2C28D9FF1D00247B8A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					02DBBB3328D9FF1D00247B8A = {
+						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
+					};
+					02DBBB4928D9FF4C00247B8A = {
+						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
+					};
+				};
+			};
+			buildConfigurationList = 02DBBB2F28D9FF1D00247B8A /* Build configuration list for PBXProject "YTMusicPlayer" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ko,
+				ja,
+			);
+			mainGroup = 02DBBB2B28D9FF1D00247B8A;
+			productRefGroup = 02DBBB3528D9FF1D00247B8A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				02DBBB3328D9FF1D00247B8A /* YTMusicPlayer (macOS) */,
+				02DBBB4928D9FF4C00247B8A /* YTMusicPlayer (iOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		02DBBB3228D9FF1D00247B8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				021602B328DA065900A8FFC4 /* Assets.xcassets in Resources */,
+				021602B028DA064D00A8FFC4 /* Main (macOS).storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02DBBB4828D9FF4C00247B8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				021602B428DA065B00A8FFC4 /* Assets.xcassets in Resources */,
+				021602B528DA066400A8FFC4 /* Main (iOS).storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		499FF08F4DA3BAB24C5C23FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YTMusicPlayer (iOS)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54D811B7FCA50E41FAF0F6E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YTMusicPlayer (macOS)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		780211FE88620A68CD089C60 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YTMusicPlayer (macOS)/Pods-YTMusicPlayer (macOS)-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YTMusicPlayer (macOS)/Pods-YTMusicPlayer (macOS)-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YTMusicPlayer (macOS)/Pods-YTMusicPlayer (macOS)-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F74AC791FE01A2B56989B8AA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YTMusicPlayer (iOS)/Pods-YTMusicPlayer (iOS)-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YTMusicPlayer (iOS)/Pods-YTMusicPlayer (iOS)-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YTMusicPlayer (iOS)/Pods-YTMusicPlayer (iOS)-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		02DBBB3028D9FF1D00247B8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				021602C328DA0CF700A8FFC4 /* CommonUiDefines.swift in Sources */,
+				021602BD28DA06FE00A8FFC4 /* LoginViewController.swift in Sources */,
+				0227613F28E3207C002E9581 /* NetworkManager.m in Sources */,
+				021602BA28DA06DE00A8FFC4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02DBBB4628D9FF4C00247B8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				021602C428DA0CF700A8FFC4 /* CommonUiDefines.swift in Sources */,
+				021602BE28DA06FF00A8FFC4 /* LoginViewController.swift in Sources */,
+				0227614028E3207C002E9581 /* NetworkManager.m in Sources */,
+				021602BB28DA06E000A8FFC4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		02DBBB4128D9FF1D00247B8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		02DBBB4228D9FF1D00247B8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		02DBBB4428D9FF1D00247B8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0C48BE2DF7FEC55A4E4DE20 /* Pods-YTMusicPlayer (macOS).debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = YTMusicPlayer/SupportFiles/YTMusicPlayer.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9TKL9SSY32;
+				ENABLE_HARDENED_RUNTIME = YES;
+				EXCLUDED_ARCHS = arm64;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YTMusicPlayer/SupportFiles/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = "Main (macOS)";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_SWIFT_FLAGS = "-D FAT_FRAMEWORK_NOT_AVAILABLE";
+				PRODUCT_BUNDLE_IDENTIFIER = com.skt.dev.together;
+				PRODUCT_MODULE_NAME = YTMusicPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = mac_together_dev_development;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "YTMusicPlayer/YTMusicPlayer (macOS)-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		02DBBB4528D9FF1D00247B8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58CD0897A1B7A9046AF07B7B /* Pods-YTMusicPlayer (macOS).release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = YTMusicPlayer/SupportFiles/YTMusicPlayer.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				EXCLUDED_ARCHS = arm64;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YTMusicPlayer/SupportFiles/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = "Main (macOS)";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "-D FAT_FRAMEWORK_NOT_AVAILABLE";
+				PRODUCT_BUNDLE_IDENTIFIER = com.deniz.ytmusic.player;
+				PRODUCT_MODULE_NAME = YTMusicPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "YTMusicPlayer/YTMusicPlayer (macOS)-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		02DBBB5C28D9FF4D00247B8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D293E8686FA0EC48F79FD23C /* Pods-YTMusicPlayer (iOS).debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9TKL9SSY32;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YTMusicPlayer/SupportFiles/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "Main (iOS)";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.deniz.ytmusic.player;
+				PRODUCT_MODULE_NAME = YTMusicPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = wildcard_development;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "YTMusicPlayer/YTMusicPlayer (iOS)-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		02DBBB5D28D9FF4D00247B8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BDAB28F01488552A01877CE /* Pods-YTMusicPlayer (iOS).release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9TKL9SSY32;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YTMusicPlayer/SupportFiles/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "Main (iOS)";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.deniz.ytmusic.player;
+				PRODUCT_MODULE_NAME = YTMusicPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = wildcard_development;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "YTMusicPlayer/YTMusicPlayer (iOS)-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		02DBBB2F28D9FF1D00247B8A /* Build configuration list for PBXProject "YTMusicPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02DBBB4128D9FF1D00247B8A /* Debug */,
+				02DBBB4228D9FF1D00247B8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02DBBB4328D9FF1D00247B8A /* Build configuration list for PBXNativeTarget "YTMusicPlayer (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02DBBB4428D9FF1D00247B8A /* Debug */,
+				02DBBB4528D9FF1D00247B8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02DBBB5B28D9FF4D00247B8A /* Build configuration list for PBXNativeTarget "YTMusicPlayer (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02DBBB5C28D9FF4D00247B8A /* Debug */,
+				02DBBB5D28D9FF4D00247B8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 02DBBB2C28D9FF1D00247B8A /* Project object */;
+}
